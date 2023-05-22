@@ -14,6 +14,8 @@ format:
 post-install:
 	#python -m textblob.download_corpora
 
+build:
+	#build container
 deploy:
 	#deploy
 	#aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 561744971673.dkr.ecr.us-east-1.amazonaws.com

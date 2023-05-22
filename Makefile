@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 
 lint:
-	#pylint --disable=R,C *.py devopslib
+	pylint --disable=R,C mylib/*.py
 
 test:
 	#python -m pytest -vv --cov=mylib test_*.py

@@ -12,7 +12,7 @@ format:
 	black *.py mylib/*.py
 
 post-install:
-	#python -m textblob.download_corpora
+	python -m textblob.download_corpora
 
 build:
 	#build container

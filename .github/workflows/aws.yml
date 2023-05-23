@@ -24,3 +24,6 @@ jobs:
       - name: Format code with Python Black
         run: |
           make format
+      - name: Build Container
+        run: |
+          make build    

@@ -24,8 +24,9 @@ run:
 
 deploy:
 	#deploy
-	aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 952766445063.dkr.ecr.us-east-1.amazonaws.com
-	docker build -t wiki .
-	docker tag wiki:latest 952766445063.dkr.ecr.us-east-1.amazonaws.com/wiki:latest
-	docker push 952766445063.dkr.ecr.us-east-1.amazonaws.com/wiki:latest
+	aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 863529406703.dkr.ecr.us-east-1.amazonaws.com
+	docker build -t diktatorial .
+	docker tag diktatorial:latest 863529406703.dkr.ecr.us-east-1.amazonaws.com/diktatorial:latest
+	docker push 863529406703.dkr.ecr.us-east-1.amazonaws.com/diktatorial:latest
+
 all: install post-install lint test format deploy
